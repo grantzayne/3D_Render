@@ -1,0 +1,17 @@
+My code is able to read a text file, using a BufferedReader, to render a 3D image made of
+3 sided polygons(triangles). Each line of the text file gives me 3 points which are the vectors
+of the polygon. It finds which polygons are visible or normal (z-value is -) and calculates the
+shading of the polygons using RGB values which are included with the text files. I then render
+the image calculating an edgelist and a z-buffer. The edgelist gives me the mins and maxs of the
+polygons while the z-buffer checks to see which pixels are in front of others using a depth.
+
+The program is supposed to be able to rotate a 3D image but mine doesn't quite work correctly.
+I can't figure out why as all my test cases seem to pass fine so it must be something wrong in
+another part of the code that isn't directly to do with my rotation methods. To test my code worked
+correctly I really utilised to JUnit tests given to me they really helped to figure out when I had
+completed a method as opposed to finding out at the very end. Printing out my arraylists was also
+very helpful because I encountered a bug where some of my polygons were missing and I was able to
+find out I was missing every 2nd line because I was using a readLine() one to many times.
+
+I also wasn't able to figure out how the colour sliders worked but the image at the very least
+does render the correct colours.
